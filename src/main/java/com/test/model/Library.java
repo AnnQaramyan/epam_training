@@ -12,7 +12,7 @@ public class Library {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private int id;
+    private int libraryId;
 
     @Column
     private String name;
@@ -23,11 +23,13 @@ public class Library {
     @Column
     private int foundationYear;
 
-    @JsonIgnore
-    @OneToOne(mappedBy = "library_id")
-    private University university_id;
+   /* @JsonIgnore
+    @OneToOne
+    @JoinColumn(name = "university_id")
+    private University university;
 
-   @OneToMany(mappedBy = "library_id")
-   private List<Librarian> librarianId;
+   @OneToMany
+   @JoinColumn(name = "librarian_id")
+   private List<Librarian> librarian;*/
 
 }

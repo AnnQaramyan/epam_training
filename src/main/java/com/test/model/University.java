@@ -9,7 +9,7 @@ public class University {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private int id;
+    private int universityId;
 
     @Column
     private String name;
@@ -18,10 +18,11 @@ public class University {
     private int year;
 
 
-    @OneToMany(mappedBy = "university_id")
-    private List<Student> studentId;
+   /* @OneToMany
+    @JoinColumn(name = "student_id")
+    private List<Student> students;
 
     @OneToOne
-    @JoinColumn(name = "university_id")
-    Library library_id;
+    @JoinColumn(name = "library_id")
+    private Library library;*/
 }

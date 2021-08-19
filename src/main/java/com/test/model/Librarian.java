@@ -10,7 +10,7 @@ public class Librarian {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private int id;
+    private int librarianId;
 
     @Column
     private String name;
@@ -18,8 +18,8 @@ public class Librarian {
     @Column
     private double salary;
 
-    @JsonIgnore
-    @JoinColumn(name = "librarian_id")
+   /* @JsonIgnore
+    @JoinColumn(name = "library_id")
     @ManyToOne
-    private Library libraryId;
+    private Library library;*/
 }

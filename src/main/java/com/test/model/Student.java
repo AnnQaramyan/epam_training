@@ -10,7 +10,7 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private int id;
+    private int studentId;
 
     @Column
     private String fullName;
@@ -21,11 +21,11 @@ public class Student {
     @Column
     private int grade;
 
-    @JsonIgnore
-    @JoinColumn(name = "student_id")
+  /*  @JsonIgnore
+    @JoinColumn(name = "university_id")
     @ManyToOne
-    private University universityId;
-
+    private University university;
+*/
 
 
 }
