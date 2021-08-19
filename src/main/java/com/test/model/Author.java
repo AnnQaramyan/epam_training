@@ -14,4 +14,5 @@ public class Author {
 
     @ManyToMany(mappedBy = "authorId")
     private List<Book> books;
+
 }

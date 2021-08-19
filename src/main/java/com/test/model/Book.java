@@ -40,14 +40,14 @@ public class Book {
   /*  @Column
     private int authorId;
 */
-    @ManyToMany
+    /*@ManyToMany
     @JoinTable(
             name = "author_book",
             joinColumns = @JoinColumn(name = "book_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "author_id", referencedColumnName = "id")
     )
     private List<Author> authorId;
-
+*/
 
 
 
